@@ -1,2 +1,2 @@
 # Scribblr-it
--"Capturing Moments, Crafting Memories"
+-Capturing Moments, Crafting Memories
