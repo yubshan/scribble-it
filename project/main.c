@@ -91,7 +91,7 @@ int main()
         Sleep(75);
         system("pause");
 
-        c = password();
+ c = password();
         if (c == 1)
         {
             printf("\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n");
@@ -106,7 +106,6 @@ int main()
             printf(" \n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n");
             printf("\"Verification Error: Please make sure you have stored your book.\"\n");
             printf("Recheck your username or password...\n");
-            printf("PROGRAM IS GOING TO BE RESTART");
             system("pause");
             system("cls");
             main();
