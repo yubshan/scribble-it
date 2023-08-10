@@ -3,6 +3,7 @@
 #include <string.h>
 #include <windows.h>
 #include <stdlib.h>
+void logo();
 int password();
 void menu();
 void write();
@@ -13,7 +14,7 @@ void add_journal();
 void add_notes();
 void display_journal();
 void display_todo();
-void display_after_todo(char *date);
+void display_after_todo(char *date); ///used function pass by refrence.
 void update_todo();
 void display_notes();
 void display_after_notes();
@@ -23,9 +24,10 @@ void delete_todo();
 void delete_notes();
 void edit_journal();
 void delete_journal();
-
 int main()
 {
+
+    logo();
     system("Color 03");
     int c;
     fflush(stdin);
@@ -37,9 +39,7 @@ int main()
     Sleep(75);
     printf("\t||.--.    .-._                        .----.             ||\n");
     Sleep(75);
-    printf("\t|||==|____| |H|___            .---.___|"
-           ""
-           "|_____.--.___     ||\n");
+    printf("\t|||==|____| |H|___            .---.___|""""|_____.--.___     ||\n");
     Sleep(75);
     printf("\t|||  |====| | |xxx|_          |+++|=-=|_  _|-=+=-|==|---|||\n");
     Sleep(75);
@@ -49,12 +49,9 @@ int main()
     Sleep(75);
     printf("\t|||  |    | | |   |_\\ \\_( oo )|   |   |    |Magus|  | ^ |||\n");
     Sleep(75);
-    printf("\t|||==|====| |H|xxx|  \\ \\ |''| |+++|=-=|"
-           ""
-           "|-=+=-|==|---    |||\n");
+    printf("\t|||==|====| |H|xxx|  \\ \\ |''| |+++|=-=|""""|-=+=-|==|---    |||\n");
     Sleep(75);
-    printf("\t||`--^----'-^-^---'   `-' "
-           "  '---^---^----^-----^--^---^  ||\n");
+    printf("\t||`--^----'-^-^---'   `-' ""  '---^---^----^-----^--^---^  ||\n");
     Sleep(75);
     printf("\t||-------------------------------------------------------||\n");
     Sleep(75);
@@ -109,6 +106,7 @@ int main()
             printf(" \n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n");
             printf("\"Verification Error: Please make sure you have stored your book.\"\n");
             printf("Recheck your username or password...\n");
+            printf("PROGRAM IS GOING TO BE RESTART");
             system("pause");
             system("cls");
             main();
@@ -1660,4 +1658,36 @@ void display_after_notes(){
     }
     fclose(fp);
 
+}
+
+void logo(){
+
+
+system("cls");
+system("color 03");
+printf("\n\n\n\n\n\n\n\n\n");
+        Sleep(100);
+printf("\t\t\t\t\t               _ _     _     _            _ _       \n");
+        Sleep(100);
+printf("\t\t\t\t\t ___  ___ _ __(_) |__ | |__ | | ___      (_) |_     \n");
+        Sleep(100);
+printf("\t\t\t\t\t/ __|/ __| '__| | '_ \\| '_ \\| |/ _ \\_____| | __|    \n");
+        Sleep(100);
+printf("\t\t\t\t\t\\__ \\ (__| |  | | |_) | |_) | |  __/_____| | |_     \n");
+        Sleep(100);
+printf("\t\t\t\t\t|___/\\___|_|  |_|_.__/|_.__/|_|\\___|     |_|\\__|    \n");
+        Sleep(100);
+                  
+   char b=219;
+   printf("\n\n\t\t\t\t\t\t  Getting ready for you:\t\n");
+        Sleep(100);
+        Sleep(100);
+   printf("        \t\t\t\t\t");
+    for(int j=0 ; j<=25; j++){
+        printf("%c",b);
+        Sleep(110);
+    }
+
+
+                                   
 }
