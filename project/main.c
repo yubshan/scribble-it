@@ -3,7 +3,8 @@
 #include <string.h>
 #include <windows.h>
 #include <stdlib.h>
-void logo();
+void i_logo();
+void o_logo();
 int password();
 void menu();
 void write();
@@ -91,7 +92,7 @@ int main()
         Sleep(75);
         system("pause");
 
- c = password();
+        c = password();
         if (c == 1)
         {
             printf("\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n");
@@ -106,6 +107,7 @@ int main()
             printf(" \n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n");
             printf("\"Verification Error: Please make sure you have stored your book.\"\n");
             printf("Recheck your username or password...\n");
+            printf("PROGRAM IS GOING TO BE RESTART");
             system("pause");
             system("cls");
             main();
@@ -221,7 +223,7 @@ void menu()
     fflush(stdin); // clearing the buffer value or garbage value
     system("cls"); // clearing the terminal
     int choice;    // initilizing variable for switch case
-
+    atexit(e_logo);
     printf("\n\n\t**********   I got your book   **********\n\n");
     Sleep(75);
     printf("\t\t      ,         ,  \n");
@@ -1207,7 +1209,6 @@ void delete_todo()
             scanf("%c", &fch);
             if (fch == 'y')
             {
-                fclose(fp1);
                 remove(date);
                 printf("\nYour todo has been sucessfully deleted..\n");
                 
@@ -1659,7 +1660,7 @@ void display_after_notes(){
 
 }
 
-void logo(){
+void i_logo(){
 
 
 system("cls");
@@ -1686,6 +1687,33 @@ printf("\t\t\t\t\t|___/\\___|_|  |_|_.__/|_.__/|_|\\___|     |_|\\__|    \n");
         printf("%c",b);
         Sleep(110);
     }
+
+
+                                   
+}
+void e_logo(){
+
+
+system("cls");
+system("color 03");
+printf("\n\n\n\n\n\n\n\n\n");
+        Sleep(100);
+printf("\t\t\t\t\t               _ _     _     _            _ _       \n");
+        Sleep(100);
+printf("\t\t\t\t\t ___  ___ _ __(_) |__ | |__ | | ___      (_) |_     \n");
+        Sleep(100);
+printf("\t\t\t\t\t/ __|/ __| '__| | '_ \\| '_ \\| |/ _ \\_____| | __|    \n");
+        Sleep(100);
+printf("\t\t\t\t\t\\__ \\ (__| |  | | |_) | |_) | |  __/_____| | |_     \n");
+        Sleep(100);
+printf("\t\t\t\t\t|___/\\___|_|  |_|_.__/|_.__/|_|\\___|     |_|\\__|    \n");
+        Sleep(100);
+                  
+   char b=219;
+   printf("\n\n\t\t\t\t\t\t  See You Later....\t\n");
+        Sleep(100);
+        Sleep(100);
+ 
 
 
                                    
