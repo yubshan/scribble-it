@@ -35,7 +35,7 @@ int main()
     fflush(stdin);
     system("cls");
     Sleep(75);
-    printf("\n\n 	************   Welcome To The Personal Diary   ************\n\n");
+    printf("\n\n 	************   Welcome To The Scribble-it   ************\n\n");
     Sleep(75);
     printf("\t  -------------------------------------------------------  \n");
     Sleep(75);
