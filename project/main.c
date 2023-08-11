@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <stdlib.h>
 void i_logo();
-void o_logo();
+void e_logo();
 int password();
 void menu();
 void write();
@@ -28,9 +28,10 @@ void delete_journal();
 int main()
 {
 
-    logo();
+    i_logo();
     system("Color 03");
     int c;
+    atexit(o_logo);
     fflush(stdin);
     system("cls");
     Sleep(75);
@@ -223,7 +224,6 @@ void menu()
     fflush(stdin); // clearing the buffer value or garbage value
     system("cls"); // clearing the terminal
     int choice;    // initilizing variable for switch case
-    atexit(e_logo);
     printf("\n\n\t**********   I got your book   **********\n\n");
     Sleep(75);
     printf("\t\t      ,         ,  \n");
@@ -1052,8 +1052,8 @@ void edit_todo()
     gets(date);
     struct task_list tl1;
     FILE *fp1, *fp2;
-    fp1 = fopen(date, "r+");
-    fp2 = fopen("copy.txt", "a+");
+    fp1 = fopen(date, "rb");
+    fp2 = fopen("copy.txt", "ab+");
     if (fp1 == NULL)
     {
         printf("Error opening the file. \n File not found \n You are redirecting to main menu\n");
@@ -1153,8 +1153,8 @@ void delete_todo()
     gets(date);
     FILE *fp1, *fp2;
     int sn;
-    fp1 = fopen(date, "r");
-    fp2 = fopen("copy.txt", "a+");
+    fp1 = fopen(date, "rb");
+    fp2 = fopen("copy.txt", "ab+");
     if (fp1 == NULL)
     {
         printf("Error opening the file;\n File not found..\n");
@@ -1209,6 +1209,8 @@ void delete_todo()
             scanf("%c", &fch);
             if (fch == 'y')
             {
+                fclose(fp1);
+                fclose(fp2);
                 remove(date);
                 printf("\nYour todo has been sucessfully deleted..\n");
                 
@@ -1320,7 +1322,9 @@ void delete_notes(){
     }
     fclose(fp1);
     fclose(fp2);
+    fflush(stdin);
     remove("notes.txt");
+    fflush(stdin);
     rename("copy.txt","notes.txt");
     printf("\ndeleted succefully\n");
     printf("You can check your updated notes from reading function.");
