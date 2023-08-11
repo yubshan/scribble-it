@@ -31,7 +31,7 @@ int main()
     i_logo();
     system("Color 03");
     int c;
-    atexit(o_logo);
+    atexit(e_logo);
     fflush(stdin);
     system("cls");
     Sleep(75);
@@ -1669,6 +1669,8 @@ void i_logo(){
 
 system("cls");
 system("color 03");
+
+        Sleep(1500);
 printf("\n\n\n\n\n\n\n\n\n");
         Sleep(100);
 printf("\t\t\t\t\t               _ _     _     _            _ _       \n");
