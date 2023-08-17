@@ -19,7 +19,7 @@ With a user-friendly interface and intuitive gestures, Scribble-it is more than 
 
 
 ## Getting Started
-Follow these instructions to get a copy of the project up and running on your local device for development and testing purposes.
+Inside the project, you will be able to find main file which contain all necessary code to run the project while rest of file are for easy look over. Follow these instructions to get a copy of the project up and running on your local device for development and testing purposes.
 
 ## Installation
   
