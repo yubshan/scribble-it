@@ -1,6 +1,6 @@
 ![Scribble-it](https://github.com/yubshan/scribble-it/assets/140963281/62c3e1d7-c21b-4095-9b53-11960a8a5069)
 
-# Scribble-it `#rgb(9, 105, 218)`
+ <span style="color:red"># Scribble-it</span>
 > Meet "Scribble-it"- Your Ultimate Digital Notebook Application.
 
 Jot down your thoughts, stay organized and keep your life in track.
