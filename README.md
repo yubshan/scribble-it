@@ -18,33 +18,34 @@ With a user-friendly interface and intuitive gestures, Scribble-it is more than 
 
 
 ## Getting Started
-Inside the project, you will be able to find main file which contain all necessary code to run the project while rest of file are for easy look over. Follow these instructions to get a copy of the project up and running on your local device for development and testing purposes.
+Inside the project, you will find different files which contain all necessary code to run the project. Follow these instructions to get a copy of the project up and running on your local device for development and testing purposes.
 
 ## Installation
   
-##### 1. Clone the repository 
+##### 1. Download Zip file from repository
 
 ```sh
-https://github.com/yubshan/scribble-it.git
+
 ```
 
-##### 2. Navigate to the project directory
+##### 2. Navigate to the project and type cmd on location bar
 
 ```sh
-cd scribble-it
+##### 3. Navigate to the project and type cmd on location
+
+```sh
+
 ```
 
-##### 3. 
-
-
+##### 3.  Paste the following script into it
 ```sh
-gcc-o out-
+gcc -o Scribble-it main.c menu.c read.c update.c write.c
 ```
 
-##### 4. Start the development server
+##### 4. .EXE (application) is created inside project folder
 
 ```sh
-
+<img src="">
 ```
 
 
