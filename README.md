@@ -17,7 +17,6 @@ Jot down your thoughts, stay organized and keep your life in track.
 With a user-friendly interface and intuitive gestures, Scribble-it is more than just an application; it's your creative haven, your brainstorming buddy, and your productivity partner, all rolled into one seamless experience. Create, edit, and update your way to the brilliance.
 
 
-
 ## Getting Started
 Inside the project, you will be able to find main file which contain all necessary code to run the project while rest of file are for easy look over. Follow these instructions to get a copy of the project up and running on your local device for development and testing purposes.
 
@@ -58,12 +57,11 @@ gcc-o out-
 - **Efficient Search:** Search function that enables users to efficiently look up specific tasks lists using keywords, without having to browse through the entire list of entries.
 
 
-
 ## Contact
 
 If you have any questions, suggestions, or feedback, feel free to reach out to us at [shresthayubshan09@gmail.com] or [0aug.anusha@gmail.com]
 
-_Keep an eye on this section for updates as we continue to enhance and expand Scribble it's capabilities._
+_Keep an eye on this section for updates as we continue to enhance and expand Scribble its capabilities._
 
 
 
