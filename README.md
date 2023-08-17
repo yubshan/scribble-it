@@ -3,7 +3,7 @@
   <img src="https://github.com/yubshan/scribble-it/assets/140963281/62c3e1d7-c21b-4095-9b53-11960a8a5069">
 </div>
 
-<h1 align="left">Scribble-it</h1>
+<h1 align="left">Scribble-it :writing_hand:</h1>
 
 
 <p align="justify">
@@ -35,11 +35,11 @@ https://github.com/yubshan/scribble-it.git
 cd scribble-it
 ```
 
-##### 3. Install dependencies
+##### 3. 
 
 
 ```sh
-
+gcc-o out-
 ```
 
 ##### 4. Start the development server
