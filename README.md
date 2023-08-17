@@ -15,7 +15,8 @@ With a user-friendly interface and intuitive gestures, Scribble-it is more than 
 ## Getting Started
 Follow these instructions to get a copy of the project up and running on your local device for development and testing purposes.
 
+
 ## Contact
 
-If you have any questions, suggestions, or feedback, feel free to reach out to us at [.com].
+If you have any questions, suggestions, or feedback, feel free to reach out to us at [shresthayubshan09@gmail.com] or [0aug.anusha@gmail.com]
 
