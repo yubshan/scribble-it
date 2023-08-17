@@ -25,13 +25,13 @@ Inside the project, you will find different files which contain all necessary co
 ##### 1. Download Zip file from repository
 
 <div align="center">
-  ![download1](https://github.com/yubshan/scribble-it/assets/129408332/5a07dec9-5d53-4b45-9756-02d1ea25c6aa)
+  <img src="https://github.com/yubshan/scribble-it/assets/129408332/5a07dec9-5d53-4b45-9756-02d1ea25c6aa">
 </div>
 
 ##### 2. Navigate to the project and type cmd on location bar
 
 <div align="center">
-  ![cmd direction](https://github.com/yubshan/scribble-it/assets/129408332/d7ea3677-b898-47bb-a802-54dc1286daf3)
+   <img src="https://github.com/yubshan/scribble-it/assets/129408332/d7ea3677-b898-47bb-a802-54dc1286daf3">
 </div>
 
 ##### 3.  Paste the following script to cmd
@@ -40,7 +40,7 @@ gcc -o Scribble-it main.c menu.c read.c update.c write.c
 ```
 
 <div align="center">
-![cmd page](https://github.com/yubshan/scribble-it/assets/129408332/89e3860b-db9f-4a15-a983-afd5aae77fc4)
+ <img src="https://github.com/yubshan/scribble-it/assets/129408332/40e29cfd-7d82-454a-a3a1-b0a8f6d8db01">
 </div>
 
 ##### 4. .EXE (application) is created inside project folder
@@ -48,7 +48,7 @@ gcc -o Scribble-it main.c menu.c read.c update.c write.c
 
 <div align="center">
   
-![cmd page](https://github.com/yubshan/scribble-it/assets/129408332/89e3860b-db9f-4a15-a983-afd5aae77fc4)
+ <img src="https://github.com/yubshan/scribble-it/assets/129408332/f30dc6f8-75cc-42a0-95fc-bb03b321ffbe">
 </div>
 
 ## Features
