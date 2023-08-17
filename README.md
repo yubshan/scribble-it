@@ -48,15 +48,13 @@ gcc-o out-
 
 ```
 
-~Discover the power of Scribble it in organizing your thoughts, fostering creativity, and brainstorming ideas. Elevate your note-taking experience today!~
-
 
 ## Features
  Explore its distinctive features below:
 - **Security:** Data privacy with **password protection** to ensure the confidentiality of your sensitive information.
 - **C-Graphics:** Creative graphics using **ASCII code** for visually engaging experience.
 - **User-friendly Interface:** Intuitive user interface for a smooth and hassle-free writing experience.
-- 
+- **Productivity:** Create, edit, update and organize notes, journal or jot down thoughts, brainstorm ideas, to-do lists, and more for streamlined and efficient workflow.
 - **Efficient Search:** Search function that enables users to efficiently look up specific tasks lists using keywords, without having to browse through the entire list of entries.
 
 
