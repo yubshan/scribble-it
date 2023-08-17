@@ -19,9 +19,11 @@ Follow these instructions to get a copy of the project up and running on your lo
 3. Install dependencies: `npm install` or `yarn install`
 4. Start the development server: `npm start` or `yarn start`
 
+<font color="red">This text is red.</font>
+<font color="green">This text is green.</font>
 
 ## Features
-
+- **Privacy:** Password protection 
 - **User-friendly Interface:** Intuitive user interface for a smooth and hassle-free whiteboarding experience.
 - **Cross-Platform:** Accessible from different devices and platforms, ensuring flexibility and convenience.
 
