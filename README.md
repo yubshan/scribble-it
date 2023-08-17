@@ -25,7 +25,7 @@ Inside the project, you will find different files which contain all necessary co
 ##### 1. Download Zip file from repository
 
 ```sh
-
+<img src="https://github.com/yubshan/scribble-it/assets/129408332/5a07dec9-5d53-4b45-9756-02d1ea25c6aa">
 ```
 
 ##### 2. Navigate to the project and type cmd on location bar
@@ -45,7 +45,7 @@ gcc -o Scribble-it main.c menu.c read.c update.c write.c
 ##### 4. .EXE (application) is created inside project folder
 
 ```sh
-<img src="">
+
 ```
 
 
