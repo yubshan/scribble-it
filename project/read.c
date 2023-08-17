@@ -3,6 +3,7 @@
 #include <string.h>
 #include <windows.h>
 #include <stdlib.h>
+
 void display_journal();
 void display_todo();
 void display_after_todo(char *date);
@@ -182,9 +183,8 @@ void display_notes(){
 };
     struct notes n;
     FILE *fp;
-      char date[12];
-    fflush(stdin);
-    fp=fopen("notes.txt","rb");
+    char date[12];
+    fp=fopen("notes.txt","r");
     printf("\nNotes are:\n\n");
     if(fp==NULL){
         printf("Error: Can't open file");
@@ -195,9 +195,6 @@ void display_notes(){
         printf("  Written content: \n");
         printf(" -> %s\n", n.text);
     }
-
-        
-    
     fclose(fp);
     system("pause");
     fflush(stdin);
@@ -311,6 +308,8 @@ void display_journal()
     }
     }
 }
+
+///********************************** void display_journal()  function finished and void update() function starts*****************************
 void display_after_todo(char *date){
    struct task_list   //declared to store the data read from file
 {

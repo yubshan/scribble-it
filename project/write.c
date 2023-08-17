@@ -190,7 +190,7 @@ void add_notes(){
     FILE *fp;
 
    
-    fp=fopen("notes.txt","ab");
+    fp=fopen("notes.txt","a+");
     fflush(stdin);
      while(choice=='y'){
     int hour=timeinfo->tm_hour;
@@ -199,19 +199,17 @@ void add_notes(){
     char time[20];
     snprintf(time,sizeof(time),"%d:%d:%d",hour, min, sec);
     sscanf(time,"%s",n.time);
-        fflush(stdin);
-         printf("Enter the topic:");
+    fflush(stdin);
+    printf("Enter the topic:");
     fgets(n.topic, 20, stdin);
-        fflush(stdin);
     printf("\nStart writing your thought:\n:");
     fgets(n.text, 500, stdin);
-    printf("Written Content:%s\n",n.text);
     fwrite(&n,sizeof(n),1,fp);
-        printf("do you want to add new notes?(y/n)\n");
-        scanf("%c",&choice);
+    printf("Written Content:%s\n",n.text);
+    printf("do you want to add new notes?(y/n)\n");
+    scanf("%c",&choice);
     }
     fclose(fp);
-        fclose(fp);
     system("pause");
     fflush(stdin);
     int ch;
@@ -320,3 +318,4 @@ void add_journal()
     }
     }
 }
+

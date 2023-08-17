@@ -141,13 +141,12 @@ void edit_todo()
         char task[200];
     };
     char date[12];
-    fflush(stdin);
     printf("Enter the Date [dd-mm] of the file that you want to update: ");
     gets(date);
     struct task_list tl1;
     FILE *fp1, *fp2;
-    fp1 = fopen(date, "r+");
-    fp2 = fopen("copy.txt", "a+");
+    fp1 = fopen(date, "r");
+    fp2 = fopen("copy", "a+");
     if (fp1 == NULL)
     {
         printf("Error opening the file. \n File not found \n You are redirecting to main menu\n");
@@ -159,28 +158,30 @@ void edit_todo()
     int sn;
     printf("Enter the task number you want to update: ");
     scanf("%d", &sn);
+    fflush(stdin);
     while (fread(&tl1, sizeof(tl1), 1, fp1))
     {
         if (tl1.sn != sn)
         {
+            fflush(stdin);
             fwrite(&tl1, sizeof(tl1), 1, fp2);
         }
         if (tl1.sn == sn)
         {
-            fflush(stdin);
             printf("\nEnter the new updated task for task %d:\n", tl1.sn);
             printf("->");
             fgets(tl1.task, 200, stdin);
+            fflush(stdin);
             fwrite(&tl1, sizeof(tl1), 1, fp2);
         }
     }
+
 
     fclose(fp1);
     //displaying new updated task...
     fclose(fp2);
     remove(date);
-    fflush(stdin);
-    rename("copy.txt", date);
+    rename("copy", date);
     printf("Task updated sucessfully\n");
     printf("Your new task list is:\n");
     display_after_todo(date);
@@ -242,13 +243,12 @@ void delete_todo()
     };
     struct task_list tl1;
     char date[12];
-    fflush(stdin);
     printf("\nEnter the Date [dd-mm] of the file that you want to update: ");
     gets(date);
     FILE *fp1, *fp2;
     int sn;
     fp1 = fopen(date, "r");
-    fp2 = fopen("copy.txt", "a+");
+    fp2 = fopen("copy1", "a+");
     if (fp1 == NULL)
     {
         printf("Error opening the file;\n File not found..\n");
@@ -267,6 +267,7 @@ void delete_todo()
         display_after_todo(date);
         printf("\nEnter the task number you want to delete:");
         scanf("%d", &sn);
+        fflush(stdin);
         while (fread(&tl1, sizeof(tl1), 1, fp1))
         {
             if (sn != tl1.sn)
@@ -278,7 +279,7 @@ void delete_todo()
         fclose(fp1);
         fclose(fp2);
         remove(date);
-        rename("copy.txt", date);
+        rename("copy1", date);
         printf("\ndeleted succefully\n");
         printf("Your new task list :\n");
         display_after_todo(date);
@@ -301,9 +302,11 @@ void delete_todo()
             printf("Are you sure?(y/n)\n");
             printf("->");
             scanf("%c", &fch);
+            fflush(stdin);
             if (fch == 'y')
             {
                 fclose(fp1);
+                fclose(fp2);
                 remove(date);
                 printf("\nYour todo has been sucessfully deleted..\n");
                 
@@ -392,10 +395,10 @@ void delete_notes(){
 
     struct notes n;
    
-    FILE *fp1,*fp2,*fp;
+    FILE *fp1,*fp2;
     char topic[20];
-    fp1=fopen("notes.txt","rb");
-    fp2=fopen("copy.txt","ab+");
+    fp1=fopen("notes.txt","r");
+    fp2=fopen("copy2.txt","a+");
      if(fp1==NULL){
         printf("Error opening the file");
         exit(1);
@@ -406,17 +409,20 @@ void delete_notes(){
     printf("\nEnter the topic of note you want to delete\n");
     printf("->");
     fgets(topic,20,stdin);
-    fflush(stdin);
     while(fread(&n,sizeof(n),1,fp1)==1){
         if(strcmp(topic,n.topic)!=0){
                fwrite(&n,sizeof(n),1,fp2);
+        }
+        else if(strcmp(topic, n.topic)==0){
+            printf("You have deleted:");
+            printf("Topic:%s\n Written Content: %s", n.topic , n.text);
         }
         
     }
     fclose(fp1);
     fclose(fp2);
     remove("notes.txt");
-    rename("copy.txt","notes.txt");
+    rename("copy2.txt","notes.txt");
     printf("\ndeleted succefully\n");
     printf("You can check your updated notes from reading function.");
     system("pause");
@@ -608,10 +614,10 @@ void delete_journal()
     Sleep(75);
     printf("      \\/    \\/          \\/          \\/   \\/  \\/  \\/  \n\n\n");
     Sleep(75);
-    FILE *fp;
     char date[12];
     char text[500];
     char text2[500];
+    FILE *fp;
     printf("\nJournal's Date [dd-mm-yyyy]: ");
     gets(date);
     fp = fopen(date, "r");
@@ -627,7 +633,6 @@ void delete_journal()
         sscanf(text, "%[^\n]", text2);
         printf("%s", text);
     }
-    fclose(fp);
     int i;
     char choice;
     printf("\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n");
@@ -643,6 +648,7 @@ void delete_journal()
         printf("Are you sure?(y/n)\n");
         printf("->");
         scanf("%c", &fch);
+        fflush(stdin);
         if (fch == 'y')
         {
             fclose(fp);
@@ -666,6 +672,7 @@ void delete_journal()
         system("pause");
         menu();
     }
+    fclose(fp);
     fflush(stdin);
     printf("\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n");
     printf("\n\nDo you want to go back to update menu ?\n\n1 :Yes\n2: No\nChoice : ");

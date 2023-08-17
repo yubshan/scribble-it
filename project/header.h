@@ -1,0 +1,19 @@
+void menu();
+void write();
+void read();
+void update();
+void add_todo();
+void add_journal();
+void add_notes();
+void display_journal();
+void display_todo();
+void display_after_todo(char *date); ///used function pass by refrence.
+void update_todo();
+void display_notes();
+void display_after_notes();
+void update_journal();
+void edit_todo();
+void delete_todo();
+void delete_notes();
+void edit_journal();
+void delete_journal();

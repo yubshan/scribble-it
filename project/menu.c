@@ -3,12 +3,12 @@
 #include <string.h>
 #include <windows.h>
 #include <stdlib.h>
+#include <stdlib.h>
 void menu()
 {
     fflush(stdin); // clearing the buffer value or garbage value
     system("cls"); // clearing the terminal
     int choice;    // initilizing variable for switch case
-
     printf("\n\n\t**********   I got your book   **********\n\n");
     Sleep(75);
     printf("\t\t      ,         ,  \n");
