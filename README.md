@@ -48,7 +48,7 @@ gcc -o Scribble-it main.c menu.c read.c update.c write.c
 
 <div align="center">
   
- <img src="https://github.com/yubshan/scribble-it/assets/129408332/f30dc6f8-75cc-42a0-95fc-bb03b321ffbe">
+ <img src="https://github.com/yubshan/scribble-it/assets/129408332/0e4ed442-89be-4f69-84a4-fae1a12df5af">
 </div>
 
 ## Features
