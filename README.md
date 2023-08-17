@@ -1,12 +1,12 @@
 ![Scribble-it](https://github.com/yubshan/scribble-it/assets/140963281/62c3e1d7-c21b-4095-9b53-11960a8a5069)
 
- <span style="color:`#RRGGBB`"># Scribble-it</span>
+ <span style="color:`#RRGGBB`"> #Scribble-it </span>
 > Meet "Scribble-it"- Your Ultimate Digital Notebook Application.
 
 Jot down your thoughts, stay organized and keep your life in track.
 With a user-friendly interface and intuitive gestures, Scribble-it is more than just an application; it's your creative haven, your brainstorming buddy, and your productivity partner, all rolled into one seamless experience. Create, edit, and update your way to the brilliance.
 
-
+```djbjsd
 ## Features
 
 - **User-friendly Interface:** Intuitive user interface for a smooth and hassle-free whiteboarding experience.
