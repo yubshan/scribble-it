@@ -1,5 +1,5 @@
 ![Scribble-it](https://github.com/yubshan/scribble-it/assets/140963281/62c3e1d7-c21b-4095-9b53-11960a8a5069)
-![Scribble-it](https://github.com/yubshan/scribble-it/assets/140963281/b3dd36b4-f851-4912-a9e4-961e679f43c2)
+
 # Scribble-it
 Meet "Scribble-it"- Your Ultimate Digital Notebook Application.
 
