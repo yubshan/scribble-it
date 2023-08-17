@@ -48,12 +48,16 @@ gcc-o out-
 
 ```
 
+~Discover the power of Scribble it in organizing your thoughts, fostering creativity, and brainstorming ideas. Elevate your note-taking experience today!~
+
 
 ## Features
-- **Privacy:** Password protection
-- **C-Graphics:** Use of ASCII code for better design 
-- **User-friendly Interface:** Intuitive user interface for a smooth and hassle-free whiteboarding experience.
-- **Cross-Platform:** Accessible from different devices and platforms, ensuring flexibility and convenience.
+ Explore its distinctive features below:
+- **Security:** Data privacy with **password protection** to ensure the confidentiality of your sensitive information.
+- **C-Graphics:** Creative graphics using **ASCII code** for visually engaging experience.
+- **User-friendly Interface:** Intuitive user interface for a smooth and hassle-free writing experience.
+- 
+- **Efficient Search:** Search function that enables users to efficiently look up specific tasks lists using keywords, without having to browse through the entire list of entries.
 
 
 
