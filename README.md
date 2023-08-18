@@ -43,7 +43,7 @@ gcc -o Scribble-it main.c menu.c read.c update.c write.c
  <img src="https://github.com/yubshan/scribble-it/assets/129408332/40e29cfd-7d82-454a-a3a1-b0a8f6d8db01">
 </div>
 
-##### 4. .EXE (application) is created inside project folder
+##### 4. .EXE (application) is created inside the project folder
 
 
 <div align="center">
