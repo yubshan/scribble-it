@@ -22,32 +22,26 @@ Inside the project, you will find different files which contain all necessary co
 
 ## Installation
   
-##### 1. Download Zip file from repository
-
+#### 1. Download Zip file from repository
 <div align="center">
   <img src="https://github.com/yubshan/scribble-it/assets/129408332/5a07dec9-5d53-4b45-9756-02d1ea25c6aa">
 </div>
 
-##### 2. Navigate to the project and type cmd on location bar
-
+#### 2. Navigate to the project and type cmd on location bar
 <div align="center">
    <img src="https://github.com/yubshan/scribble-it/assets/129408332/d7ea3677-b898-47bb-a802-54dc1286daf3">
 </div>
 
-##### 3.  Paste the following script to cmd
+#### 3.  Paste the following script to cmd
 ```sh
 gcc -o Scribble-it main.c menu.c read.c update.c write.c
 ```
-
 <div align="center">
  <img src="https://github.com/yubshan/scribble-it/assets/129408332/40e29cfd-7d82-454a-a3a1-b0a8f6d8db01">
 </div>
 
-##### 4. .EXE (application) is created inside the project folder
-
-
-<div align="center">
-  
+#### 4. .EXE (application) is created inside the project folder
+<div align="center"> 
  <img src="https://github.com/yubshan/scribble-it/assets/129408332/0e4ed442-89be-4f69-84a4-fae1a12df5af">
 </div>
 
