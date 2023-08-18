@@ -27,7 +27,12 @@ Inside the project, you will find different files which contain all necessary co
   <img src="https://github.com/yubshan/scribble-it/assets/129408332/5a07dec9-5d53-4b45-9756-02d1ea25c6aa">
 </div>
 
-#### 2. Navigate to the project and type cmd on location bar
+#### 2. Go to your download location and right click on file the click extract all
+<div align="center">
+   <img src="https://github.com/yubshan/scribble-it/assets/129408332/38aae617-f1b3-4441-8f9b-5b5eba623871">
+</div>
+
+#### 2. Navigate to the project file inside  the download file and type cmd on the location bar
 <div align="center">
    <img src="https://github.com/yubshan/scribble-it/assets/129408332/d7ea3677-b898-47bb-a802-54dc1286daf3">
 </div>
