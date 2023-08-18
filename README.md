@@ -37,7 +37,7 @@ Inside the project, you will find different files which contain all necessary co
    <img src="https://github.com/yubshan/scribble-it/assets/129408332/d7ea3677-b898-47bb-a802-54dc1286daf3">
 </div>
 
-#### 4.  Paste the following script to cmd
+#### 4.  Paste the following script to cmd(terminal)
 ```sh
 gcc -o Scribble-it main.c menu.c read.c update.c write.c
 ```
