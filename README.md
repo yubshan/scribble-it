@@ -32,12 +32,12 @@ Inside the project, you will find different files which contain all necessary co
    <img src="https://github.com/yubshan/scribble-it/assets/129408332/38aae617-f1b3-4441-8f9b-5b5eba623871">
 </div>
 
-#### 2. Navigate to the project file inside  the download file and type cmd on the location bar
+#### 3. Navigate to the project file inside  the download file and type cmd on the location bar
 <div align="center">
    <img src="https://github.com/yubshan/scribble-it/assets/129408332/d7ea3677-b898-47bb-a802-54dc1286daf3">
 </div>
 
-#### 3.  Paste the following script to cmd
+#### 4.  Paste the following script to cmd
 ```sh
 gcc -o Scribble-it main.c menu.c read.c update.c write.c
 ```
@@ -45,7 +45,7 @@ gcc -o Scribble-it main.c menu.c read.c update.c write.c
  <img src="https://github.com/yubshan/scribble-it/assets/129408332/40e29cfd-7d82-454a-a3a1-b0a8f6d8db01">
 </div>
 
-#### 4. .EXE (application) is created inside the project folder
+#### 5. .EXE (application) is created inside the project folder
 <div align="center"> 
  <img src="https://github.com/yubshan/scribble-it/assets/129408332/0e4ed442-89be-4f69-84a4-fae1a12df5af">
 </div>
